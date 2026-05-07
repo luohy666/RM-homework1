@@ -16,3 +16,6 @@ target_link_libraries(armor_detect ${OpenCV_LIBS})
 
 add_executable(pnp src/pnp/pose_estimation.cpp)
 target_link_libraries(pnp ${OpenCV_LIBS})
+
+add_executable(armor_video src/detection/armor_video.cpp)
+target_link_libraries(armor_video ${OpenCV_LIBS})
