@@ -19,3 +19,12 @@ target_link_libraries(pnp ${OpenCV_LIBS})
 
 add_executable(armor_video src/detection/armor_video.cpp)
 target_link_libraries(armor_video ${OpenCV_LIBS})
+
+add_executable(kalman_homework
+    kalman/src/kalman_homework.cpp)
+
+target_link_libraries(kalman_homework ${OpenCV_LIBS})
+
+add_executable(stock_predict
+    kalman/src/stock_predict.cpp
+)
